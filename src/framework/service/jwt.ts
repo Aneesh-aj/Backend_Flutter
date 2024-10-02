@@ -4,9 +4,9 @@ import jwt, { JwtPayload } from 'jsonwebtoken'
 require('dotenv').config()
 
 export class JWTtoken implements Ijwt{
-  JWT_VERIFICATION_KEY= process.env.JWT_VERIFICATION_KEY || ""
-  JWT_ACCESS_KEY = process.env.JWT_ACCESS_KEY || ""
-  JWT_REFRESH_KEY = process.env.JWT_REFRESH_KEY || ""
+  JWT_VERIFICATION_KEY= process.env.JWT_VERIFICATION_KEY || "hh"
+  JWT_ACCESS_KEY = process.env.JWT_ACCESS_KEY || "hh"
+  JWT_REFRESH_KEY = process.env.JWT_REFRESH_KEY || "hh"
      
 
       async createVerificationJWT(payload: any): Promise<string> {
